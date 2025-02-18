@@ -1,8 +1,12 @@
 import streamlit as st 
+import mysql.connector 
 
-from connection import connection_mysql
-
-conn=connection_mysql()
+conn=mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="root",
+        database="mydbfromlocal"
+    )
 
 
 def userregister(u,e,p):
