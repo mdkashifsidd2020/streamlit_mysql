@@ -2,7 +2,7 @@ import streamlit as st
 import mysql.connector 
 
 conn=mysql.connector.connect(
-        host="localhost",
+        # host="localhost",
         user="root",
         password="root",
         database="mydbfromlocal"
